@@ -1,0 +1,86 @@
+.custom-button {
+    -fx-background-color: transparent; /* Removes default background */
+    -fx-border-color: red; /* Sets a custom border color */
+    -fx-border-width: 2px; /* Sets border thickness */
+    -fx-border-radius: 150px; /* Optional: Adds rounded corners */
+    -fx-background-insets: 0; /* Prevents insets from affecting the border */
+    -fx-border-insets: 0; /* Prevents insets from affecting the border */
+    -fx-padding: 5px; /* Adjusts padding inside the button */
+}
+
+.hexagon-button {
+    -fx-shape: "M0,50 L25,0 L75,0 L100,50 L75,100 L25,100 Z"; /* Hexagon path */
+    -fx-background-color: skyblue;
+    -fx-border-color: blue;
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+}
+
+.pentagon-button {
+    -fx-shape: "M50,0 L100,38 L81,100 L19,100 L0,38 Z"; /* Pentagon path */
+    -fx-background-color: skyblue;
+    -fx-border-color: blue;
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+}
+
+.triangle-button {
+    -fx-shape: "M50,0 L100,100 L0,100 Z"; /* Triangle path */
+    -fx-background-color: skyblue;
+    -fx-border-color: blue;
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+}
+
+.octagon-button {
+    -fx-shape: "M30,0 L70,0 L100,30 L100,70 L70,100 L30,100 L0,70 L0,30 Z"; /* Octagon path */
+    -fx-background-color: skyblue;
+    -fx-border-color: blue;
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+}
+
+.diamond-button {
+    -fx-shape: "M50,0 L100,50 L50,100 L0,50 Z"; /* Diamond path */
+    -fx-background-color: skyblue;
+    -fx-border-color: blue;
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+}
+
+.arrow-button {
+    -fx-shape: "M0,40 L50,40 L50,0 L100,50 L50,100 L50,60 L0,60 Z"; /* Arrow path */
+    -fx-background-color: skyblue;
+    -fx-border-color: blue;
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+}
+
+.heart-button {
+    -fx-shape: "M50,30 C50,10 10,10 10,40 C10,70 50,90 50,100 C50,90 90,70 90,40 C90,10 50,10 50,30 Z"; /* Heart path */
+    -fx-background-color: skyblue;
+    -fx-border-color: blue;
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+}
+
+.clover-button {
+    -fx-shape: "M50,0 C30,0 30,20 50,20 C70,20 70,0 50,0 Z M0,50 C0,30 20,30 20,50 C20,70 0,70 0,50 Z M50,100 C30,100 30,80 50,80 C70,80 70,100 50,100 Z M100,50 C100,30 80,30 80,50 C80,70 100,70 100,50 Z"; /* Clover path */
+    -fx-background-color: skyblue;
+    -fx-border-color: blue;
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+}
+
+.tryF-button {
+    -fx-shape: "M68 58C106 134 132 -33 182 6.99998V78L136 147L2 159C5.2 155 47.3333 90 68 58Z" ; /* from figma path */
+    //-fx-background-color: skyblue;
+    -fx-background-color: linear-gradient(to bottom, lightblue, skyblue, blue);
+    -fx-border-color: blue;
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+}
+.tryF-button:pressed {
+    -fx-background-color: #D7D7D7; /* Change to desired pressed color */
+    -fx-border-color: black;
+}
