@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
 
 public class MainApplication extends Application {
     @Override
@@ -15,6 +16,8 @@ public class MainApplication extends Application {
         stage.setTitle("BOBOlets!");
         stage.setScene(scene);
         stage.show();
+
+
     }
 
     public static void main(String[] args) {

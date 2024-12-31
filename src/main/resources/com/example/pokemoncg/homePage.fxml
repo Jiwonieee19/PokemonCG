@@ -14,9 +14,9 @@
 
 <AnchorPane fx:id="frameAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pokemoncg.homeController">
    <children>
-      <ImageView fx:id="bgImageVIew" fitHeight="700.0" fitWidth="1080.0" pickOnBounds="true">
+      <ImageView fx:id="newbgImageView" fitHeight="700.0" fitWidth="1080.0" pickOnBounds="true">
          <image>
-            <Image url="@../../../image/1783733R.jpg" />
+            <Image url="@../../../css/image/1783733R.jpg" />
          </image>
       </ImageView>
       <BorderPane fx:id="panelBorderPane" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1080.0">
@@ -31,26 +31,26 @@
                      <styleClass>
                         <String fx:value="ComCas-button" />
                         <String fx:value="white-press-button" />
-                        <String fx:value="gold-hover-button" />
+                        <String fx:value="uni-hover-button" />
                      </styleClass>
                   </Button>
-                  <Button fx:id="compeButton" alignment="BOTTOM_CENTER" layoutX="63.0" layoutY="202.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="220.0" stylesheets="@../../../css/FButton.css" text="COMPE">
+                  <Button fx:id="compeButton" alignment="BOTTOM_CENTER" layoutX="63.0" layoutY="202.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="220.0" stylesheets="@../../../css/FButton.css" text="COMPETE" textFill="WHITE">
                      <font>
                         <Font name="Berlin Sans FB" size="38.0" />
                      </font>
                      <styleClass>
                         <String fx:value="ComCas-button" />
                         <String fx:value="white-press-button" />
-                        <String fx:value="gold-hover-button" />
+                        <String fx:value="compe-hover-button" />
                      </styleClass>
                   </Button>
-                  <HBox alignment="BASELINE_LEFT" layoutX="67.0" layoutY="302.0" prefHeight="68.0" prefWidth="203.0">
+                  <HBox alignment="BOTTOM_CENTER" layoutX="63.0" layoutY="309.0" prefHeight="93.0" prefWidth="220.0" stylesheets="@../../../css/FButton.css">
                      <children>
-                        <Button fx:id="historyButton" mnemonicParsing="false" prefHeight="52.0" prefWidth="38.0">
+                        <Button fx:id="historyButton" mnemonicParsing="false" prefHeight="52.0" prefWidth="38.0" styleClass="four-button" stylesheets="@../../../css/FButton.css">
                            <graphic>
                               <ImageView fx:id="historyImage" fitHeight="38.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../icon/file.png" />
+                                    <Image url="@../../../iconSceneB/file.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -58,11 +58,11 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
                         </Button>
-                        <Button fx:id="leaderboardButton" layoutX="20.0" layoutY="37.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="38.0">
+                        <Button fx:id="leaderboardButton" layoutX="20.0" layoutY="37.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="38.0" styleClass="four-button" stylesheets="@../../../css/FButton.css">
                            <graphic>
                               <ImageView fx:id="leaderboardImage" fitHeight="38.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../icon/podium.png" />
+                                    <Image url="@../../../iconSceneB/podium.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -70,11 +70,11 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
                         </Button>
-                        <Button fx:id="rankButton" layoutX="88.0" layoutY="55.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="38.0">
+                        <Button fx:id="rankButton" layoutX="88.0" layoutY="55.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="38.0" styleClass="four-button" stylesheets="@../../../css/FButton.css">
                            <graphic>
                               <ImageView fx:id="rankImage" fitHeight="38.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../icon/trophy.png" />
+                                    <Image url="@../../../iconSceneB/trophy.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -82,11 +82,11 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
                         </Button>
-                        <Button fx:id="settingButton" layoutX="88.0" layoutY="55.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="38.0">
+                        <Button fx:id="settingButton" layoutX="88.0" layoutY="55.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="38.0" styleClass="four-button" stylesheets="@../../../css/FButton.css">
                            <graphic>
                               <ImageView fx:id="settingImage" fitHeight="38.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../icon/black-settings-button.png" />
+                                    <Image url="@../../../iconSceneB/black-settings-button.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -98,6 +98,11 @@
                      <padding>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </padding>
+                     <styleClass>
+                        <String fx:value="ComCas-button" />
+                        <String fx:value="white-press-button" />
+                        <String fx:value="uni-hover-button" />
+                     </styleClass>
                   </HBox>
                </children>
             </AnchorPane>
@@ -107,23 +112,28 @@
                <children>
                   <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="17.0" prefHeight="44.0" prefWidth="420.0" spacing="10.0">
                      <children>
-                        <Button fx:id="profileButton" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="51.0" prefWidth="325.0" text="PROFILE" textFill="WHITE">
+                        <Button fx:id="profileButton" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="51.0" prefWidth="325.0" styleClass="prof-button" stylesheets="@../../../css/FButton.css" text="PROFILE" textFill="WHITE">
                            <font>
                               <Font name="Berlin Sans FB" size="24.0" />
                            </font>
                         </Button>
-                        <Button fx:id="topupButton" contentDisplay="TOP" mnemonicParsing="false" prefHeight="53.0" prefWidth="85.0" styleClass="tryF-button" text="TopUp">
+                        <Button fx:id="topupButton" contentDisplay="TOP" mnemonicParsing="false" prefHeight="53.0" prefWidth="85.0" text="TopUp">
                            <graphic>
                               <ImageView fx:id="topupImage" fitHeight="21.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../icon/money-bag.png" />
+                                    <Image url="@../../../iconSceneB/money-bag.png" />
                                  </image>
                               </ImageView>
                            </graphic>
                            <stylesheets>
                               <URL value="@../../../css/button.css" />
                               <URL value="@../../../css/styles.css" />
+                              <URL value="@../../../css/FButton.css" />
                            </stylesheets>
+                           <styleClass>
+                              <String fx:value="tryF-button" />
+                              <String fx:value="compe-hover-button" />
+                           </styleClass>
                         </Button>
                      </children>
                   </HBox>
@@ -142,7 +152,7 @@
                                     <Rectangle2D />
                                  </viewport>
                                  <image>
-                                    <Image url="@../../../icon/pokeball.png" />
+                                    <Image url="@../../../iconSceneB/pokeball.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -152,14 +162,14 @@
                            <styleClass>
                               <String fx:value="button1F-button" />
                               <String fx:value="white-press-button" />
-                              <String fx:value="gold-hover-button" />
+                              <String fx:value="uni-hover-button" />
                            </styleClass>
                         </Button>
                         <Button fx:id="myteamButton" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="130.0" stylesheets="@../../../css/FButton.css" textAlignment="CENTER">
                            <graphic>
                               <ImageView fx:id="myteamImage" fitHeight="70.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../icon/pokemon-trainer.png" />
+                                    <Image url="@../../../iconSceneB/pokemon-trainer.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -169,14 +179,14 @@
                            <styleClass>
                               <String fx:value="button1F-button" />
                               <String fx:value="white-press-button" />
-                              <String fx:value="gold-hover-button" />
+                              <String fx:value="uni-hover-button" />
                            </styleClass>
                         </Button>
                         <Button fx:id="inventoryButton" contentDisplay="TOP" layoutX="142.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="130.0" stylesheets="@../../../css/FButton.css" textAlignment="CENTER">
                            <graphic>
                               <ImageView fx:id="inventoryImage" fitHeight="70.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../icon/school-bag.png" />
+                                    <Image url="@../../../iconSceneB/school-bag.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -186,7 +196,7 @@
                            <styleClass>
                               <String fx:value="button1F-button" />
                               <String fx:value="white-press-button" />
-                              <String fx:value="gold-hover-button" />
+                              <String fx:value="uni-hover-button" />
                            </styleClass>
                         </Button>
                      </children>

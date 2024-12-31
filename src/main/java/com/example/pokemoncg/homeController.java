@@ -3,6 +3,7 @@ package com.example.pokemoncg;
 import com.example.Abstract.ImageViewUtility;
 import com.example.Abstract.PaneLayout;
 import com.example.Abstract.TooltipHelper;
+import com.example.CSSEffects.AnimationEffectUsage;
 import com.example.CSSEffects.GlowEffectUsage;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -18,7 +19,7 @@ public class homeController {
     private AnchorPane frameAnchorPane;
 
     @FXML
-    private ImageView bgImageVIew;
+    private ImageView newbgImageView;
 
     @FXML
     private BorderPane panelBorderPane;
@@ -94,11 +95,11 @@ public class homeController {
 
     public void initialize() {
         // Load background image using utility method
-        ImageViewUtility.setBackgroundImage(bgImageVIew, "C:\\Users\\ryanj\\IdeaProjects\\PokemonCG\\src\\main\\resources\\image\\1783733R.jpg");
+        ImageViewUtility.setBackgroundImage(newbgImageView, "C:\\Users\\ryanj\\IdeaProjects\\PokemonCG\\src\\main\\resources\\css\\image\\1783733R.jpg");
 
         // Bind the ImageView's size to the AnchorPane's size
-        bgImageVIew.fitWidthProperty().bind(frameAnchorPane.widthProperty());
-        bgImageVIew.fitHeightProperty().bind(frameAnchorPane.heightProperty());
+        newbgImageView.fitWidthProperty().bind(frameAnchorPane.widthProperty());
+        newbgImageView.fitHeightProperty().bind(frameAnchorPane.heightProperty());
 
         // Bind layout components dynamically using LayoutManager
         PaneLayout.bindLayoutComponents(frameAnchorPane, panelBorderPane, topAnchorPane, bottomAnchorPane, rightAnchorPane, centerAnchorPane);
@@ -122,7 +123,15 @@ public class homeController {
         tooltip3.attachTooltip(inventoryButton);
 
         //GLOW EFFECTS
-        GlowEffectUsage.apply(historyButton);
+        GlowEffectUsage.applyHover(historyButton);
+        GlowEffectUsage.applyHover(leaderboardButton);
+        GlowEffectUsage.applyHover(rankButton);
+        GlowEffectUsage.applyHover(settingButton);
+
+        GlowEffectUsage.applyHover(compeButton);
+
+        //ANI HOVER EFFECTS
+        //AnimationEffectUsage.apply(profileButton);
 
     }
 

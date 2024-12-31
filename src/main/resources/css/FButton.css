@@ -6,18 +6,22 @@
     -fx-border-width: 3px;
     -fx-padding: 10px;
 }
-.gold-hover-button:hover {
+.uni-hover-button:hover {
     -fx-background-color: #22577aff;
     -fx-border-color: #c7f9ccff;
     -fx-border-width: 3px;
     -fx-effect:
-    dropshadow(gaussian, gold, 100, 0, 0, 0),
-    dropshadow(gaussian, gold, 200, 0, 0, 0),
-    dropshadow(gaussian, gold, 300, 0, 0, 0),
-    dropshadow(gaussian, gold, 400, 0, 0, 0),
-    dropshadow(gaussian, gold, 500, 0, 0, 0);
-
+        /*dropshadow(gaussian, gold, 100, 0, 0, 0),*/
+        dropshadow(gaussian, gold, 20, 0, 0, 0);
 }
+
+.compe-hover-button:hover {
+    -fx-background-image: url("image/sampleTextureCrop.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    }
+
 .white-press-button:pressed {
     -fx-background-color: white;
     -fx-border-color: #22577aff;
@@ -31,4 +35,15 @@
     -fx-border-color: #c7f9ccff;
     -fx-border-width: 3px;
     -fx-padding: 10px;
+}
+
+.four-button {
+    -fx-background-color: transparent;
+  }
+
+.prof-button {
+    -fx-background-image: url("image/sampleTextureCrop.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
 }

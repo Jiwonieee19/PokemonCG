@@ -2,9 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Animation</title>
+    <style>
+        /* Existing button style */
+        .profileButton {
+            position: relative;
+            padding: 12px 30px;
+            font-size: 18px;
+            text-align: center;
+            color: white;
+            background-color: #333;
+            border: 2px solid transparent;
+            cursor: pointer;
+            outline: none;
+            overflow: hidden;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* The animated line */
+        .profileButton .line {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: red;
+            transition: width 0.5s ease-in-out;
+        }
+    </style>
 </head>
 <body>
+
+<button class="button" id="hoverButton">Hover Me</button>
+
+<script>
+    // Dynamically add the line element to the button
+    const button = document.getElementById('hoverButton');
+
+    // Create a div for the line effect
+    const line = document.createElement('div');
+    line.classList.add('line');
+    button.appendChild(line);
+
+    // Add hover listeners to trigger the animation
+    button.addEventListener('mouseenter', function() {
+        line.style.width = '100%';  // Animate line to full width
+    });
+
+    button.addEventListener('mouseleave', function() {
+        line.style.width = '0';  // Reset line width when hover ends
+    });
+</script>
 
 </body>
 </html>
