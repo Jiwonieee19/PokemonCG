@@ -1,0 +1,24 @@
+.Prof-AnchorP {
+    -fx-border-width: 3px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 13px;
+    -fx-background-color: #c7f9ccB3;
+    -fx-border-color: #22577aff;
+}
+
+.Uni-Border {
+    -fx-border-width: 3px;
+    -fx-border-radius: 10px;
+    -fx-text-fill: #22577aff;
+    -fx-border-color: #22577aff;
+    -fx-background-color: transparent;
+}
+
+.Prof-Border {
+    -fx-shape: "M50,50 m-40,0 a40,40 0 1,0 80,0 a40,40 0 1,0 -80,0";
+    -fx-background-image: url("image/sampleTextureCrop.jpg");
+    -fx-border-width: 3px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #22577aff;
+    -fx-background-color: transparent;
+}

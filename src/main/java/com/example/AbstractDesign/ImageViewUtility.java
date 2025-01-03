@@ -1,4 +1,4 @@
-package com.example.Abstract;
+package com.example.AbstractDesign;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.String?>
-<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.geometry.Rectangle2D?>
 <?import javafx.scene.control.Button?>
@@ -108,31 +107,32 @@
             </AnchorPane>
          </right>
          <top>
-            <AnchorPane fx:id="topAnchorPane" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <AnchorPane fx:id="topAnchorPane" prefHeight="95.0" prefWidth="1080.0" BorderPane.alignment="CENTER">
                <children>
-                  <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="17.0" prefHeight="44.0" prefWidth="420.0" spacing="10.0">
+                  <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="7.0" prefHeight="81.0" prefWidth="420.0" spacing="10.0">
                      <children>
-                        <Button fx:id="profileButton" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="51.0" prefWidth="325.0" styleClass="prof-button" stylesheets="@../../../css/FButton.css" text="PROFILE" textFill="WHITE">
+                        <Button fx:id="profileButton" alignment="BOTTOM_LEFT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#profileButtonOnAction" prefHeight="77.0" prefWidth="281.0" stylesheets="@../../../css/FButton.css" text="     PROFILE" textFill="WHITE">
                            <font>
-                              <Font name="Berlin Sans FB" size="24.0" />
+                              <Font name="Berlin Sans FB" size="28.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="Prof-button" />
+                              <String fx:value="uni-hover-button" />
+                              <String fx:value="white-press-button" />
+                           </styleClass>
                         </Button>
-                        <Button fx:id="topupButton" contentDisplay="TOP" mnemonicParsing="false" prefHeight="53.0" prefWidth="85.0" text="TopUp">
+                        <Button fx:id="topupButton" contentDisplay="TOP" mnemonicParsing="false" prefHeight="80.0" prefWidth="77.0" stylesheets="@../../../css/FButton.css" textFill="WHITE">
                            <graphic>
-                              <ImageView fx:id="topupImage" fitHeight="21.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="topupImage" fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../iconSceneB/money-bag.png" />
+                                    <Image url="@../../../css/iconCopy/money-bag.png" />
                                  </image>
                               </ImageView>
                            </graphic>
-                           <stylesheets>
-                              <URL value="@../../../css/button.css" />
-                              <URL value="@../../../css/styles.css" />
-                              <URL value="@../../../css/FButton.css" />
-                           </stylesheets>
                            <styleClass>
-                              <String fx:value="tryF-button" />
-                              <String fx:value="compe-hover-button" />
+                              <String fx:value="Topup-button" />
+                              <String fx:value="uni-hover-button" />
+                              <String fx:value="white-press-button" />
                            </styleClass>
                         </Button>
                      </children>
@@ -210,6 +210,9 @@
          <center>
             <AnchorPane fx:id="centerAnchorPane" prefHeight="200.0" prefWidth="753.0" BorderPane.alignment="CENTER" />
          </center>
+         <left>
+            <AnchorPane fx:id="leftAnchorPane" prefHeight="1.0" prefWidth="1.0" BorderPane.alignment="CENTER" />
+         </left>
       </BorderPane>
    </children>
 </AnchorPane>

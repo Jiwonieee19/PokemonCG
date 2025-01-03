@@ -16,6 +16,6 @@ module com.example.pokemoncg {
 
     opens com.example.pokemoncg to javafx.fxml;
     exports com.example.pokemoncg;
-    exports com.example.Abstract;
-    opens com.example.Abstract to javafx.fxml;
+    exports com.example.AbstractDesign;
+    opens com.example.AbstractDesign to javafx.fxml;
 }

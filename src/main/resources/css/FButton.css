@@ -23,6 +23,7 @@
     }
 
 .white-press-button:pressed {
+    -fx-background-image: null;
     -fx-background-color: white;
     -fx-border-color: #22577aff;
     -fx-border-width: 5px;
@@ -46,4 +47,22 @@
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
+}
+
+.Prof-button {
+    /*-fx-shape: "M39,0 H158 A39,39 0 0 1 197,39 V39 A39,39 0 0 1 158,78 H39 A39,39 0 0 1 0,39 V39 A39,39 0 0 1 39,0 Z";*/
+    -fx-shape: "M534.5 5.34876C429 -6 402.5 53.44 361 46.3488C361 46.3488 358 49 338.5 37.5L338.459 37.4759C328.057 31.3414 321.5 27.4746 321.5 8.00001C321.5 -11.5 235 10 165.5 39.5C157.801 42.7677 141 39 135 30C133.5 23 141 15.5 137 10C96 8.5 38.5 45 14.5 53.44C-9.50008 61.88 2.28296 140.187 14.5 144.683C26.717 149.18 365.653 165.459 550.416 144.683C581.543 112.451 566.581 76.0008 573 29.7585C514.219 39.2927 540 29.7585 534.5 5.34876Z";
+    -fx-background-color: linear-gradient(to bottom, #57cc99ff, #38a3a5ff, #22577aff);
+    -fx-border-color: #c7f9ccff;
+    -fx-border-width: 3px;
+    -fx-padding: 10px;
+}
+
+.Topup-button {
+    /*-fx-shape: "M39,0 H158 A39,39 0 0 1 197,39 V39 A39,39 0 0 1 158,78 H39 A39,39 0 0 1 0,39 V39 A39,39 0 0 1 39,0 Z";*/
+    -fx-shape: "M126.558 4.64909C92.1509 -13.7104 29.9859 42.7802 12.3538 50.6191L3.89431 46.44C0.446281 45.6172 -0.355078 133.187 3.89431 137.684C8.1437 142.18 88.8791 158.459 153.145 137.684C163.972 105.451 158.767 69.0008 161 22.7585C140.554 32.2927 130.857 33.4469 126.558 4.64909Z";
+    -fx-background-color: linear-gradient(to bottom, #57cc99ff, #38a3a5ff, #22577aff);
+    -fx-border-color: #c7f9ccff;
+    -fx-border-width: 3px;
+    -fx-padding: 10px;
 }
