@@ -1,0 +1,7 @@
+.prof-white-press-button:pressed {
+    -fx-background-image: null;
+    -fx-background-color: white;
+    -fx-text-fill: white;
+    -fx-border-color: #22577aff;
+    -fx-border-width: 3px;
+}

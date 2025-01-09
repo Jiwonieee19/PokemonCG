@@ -11,7 +11,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.effect.Glow;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 
@@ -23,8 +25,7 @@ import java.io.IOException;
 public class homeController extends FXMLLoaderUtility {
 
     @FXML
-    private AnchorPane frameAnchorPane;
-
+    private AnchorPane frameAnchorPane, rightAnchorPane, leftAnchorPane, bottomAnchorPane, topAnchorPane, centerAnchorPane;
     @FXML
     private ImageView newbgImageView;
 
@@ -32,76 +33,17 @@ public class homeController extends FXMLLoaderUtility {
     private BorderPane panelBorderPane;
 
     @FXML
-    private AnchorPane bottomAnchorPane;
+    private Button profileButton, topupButton, casualButton, compeButton, historyButton, trophyButton, leaderboardButton, settingButton;
 
     @FXML
-    private AnchorPane topAnchorPane;
+    private Button pokemonButton, myteamButton, inventoryButton;
 
     @FXML
-    private AnchorPane rightAnchorPane;
+    private ImageView topupImage, historyImage, leaderboardImage, trophyImage, settingImage;
 
     @FXML
-    private AnchorPane leftAnchorPane;
+    private ImageView pokemonImage, myteamImage, inventoryImage;
 
-    @FXML
-    private AnchorPane centerAnchorPane;
-
-    @FXML
-    private Button casualButton;
-
-    @FXML
-    private Button profileButton;
-
-    @FXML
-    private Button compeButton;
-
-    @FXML
-    private Button topupButton;
-
-    @FXML
-    private Button historyButton;
-
-    @FXML
-    private Button inventoryButton;
-
-    @FXML
-    private Button leaderboardButton;
-
-    @FXML
-    private Button myteamButton;
-
-    @FXML
-    private Button pokemonButton;
-
-    @FXML
-    private Button rankButton;
-
-    @FXML
-    private Button settingButton;
-
-    @FXML
-    private ImageView historyImage;
-
-    @FXML
-    private ImageView inventoryImage;
-
-    @FXML
-    private ImageView leaderboardImage;
-
-    @FXML
-    private ImageView myteamImage;
-
-    @FXML
-    private ImageView pokemonImage;
-
-    @FXML
-    private ImageView rankImage;
-
-    @FXML
-    private ImageView settingImage;
-
-    @FXML
-    private ImageView topupImage;
 
     public void initialize() {
         // Load background image using utility method
@@ -119,7 +61,7 @@ public class homeController extends FXMLLoaderUtility {
         ImageViewWhite.apply(inventoryImage);
         ImageViewWhite.apply(leaderboardImage);
         ImageViewWhite.apply(myteamImage);
-        ImageViewWhite.apply(rankImage);
+        ImageViewWhite.apply(trophyImage);
         ImageViewWhite.apply(pokemonImage);
         ImageViewWhite.apply(settingImage);
         ImageViewWhite.apply(topupImage);
@@ -134,13 +76,23 @@ public class homeController extends FXMLLoaderUtility {
         TooltipHelper.PokemonTooltip tooltip4 = new TooltipHelper.PokemonTooltip("Top Up");
         tooltip4.attachTooltip(topupButton);
 
+        TooltipHelper.PokemonTooltip tooltip5 = new TooltipHelper.PokemonTooltip("History");
+        tooltip5.attachTooltip(historyButton);
+        TooltipHelper.PokemonTooltip tooltip6 = new TooltipHelper.PokemonTooltip("Leaderboard");
+        tooltip6.attachTooltip(leaderboardButton);
+        TooltipHelper.PokemonTooltip tooltip7 = new TooltipHelper.PokemonTooltip("Trophy");
+        tooltip7.attachTooltip(trophyButton);
+        TooltipHelper.PokemonTooltip tooltip8 = new TooltipHelper.PokemonTooltip("Settings");
+        tooltip8.attachTooltip(settingButton);
+
         //GLOW EFFECTS
         GlowEffectUsage.applyHover(historyButton);
         GlowEffectUsage.applyHover(leaderboardButton);
-        GlowEffectUsage.applyHover(rankButton);
+        GlowEffectUsage.applyHover(trophyButton);
         GlowEffectUsage.applyHover(settingButton);
 
         GlowEffectUsage.applyHover(compeButton);
+
 
         //ANI HOVER EFFECTS
         //AnimationEffectUsage.apply(profileButton);
@@ -152,6 +104,13 @@ public class homeController extends FXMLLoaderUtility {
 
         Stage stage = (Stage) profileButton.getScene().getWindow();
         loadFXMLAndSetScene(stage,"/com/example/pokemoncg/profilePage.fxml", "RAULOlets!", 1105, 735);
+    }
+
+    @FXML
+    private void topupButtonOnAction (ActionEvent event) {
+
+        Stage stage = (Stage) topupButton.getScene().getWindow();
+        loadFXMLAndSetScene(stage,"/com/example/pokemoncg/topupPage.fxml", "GAGUElets!", 1105, 735);
     }
 
 

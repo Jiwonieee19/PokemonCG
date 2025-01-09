@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="800.0" styleClass="Popup-Anchor" stylesheets="@../../../css/DesignComponents.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pokemoncg.paymentController">
+   <children>
+      <VBox layoutX="25.0" layoutY="79.0" prefHeight="450.0" prefWidth="750.0" styleClass="Popup-Anchor2" stylesheets="@../../../css/DesignComponents.css">
+         <children>
+            <AnchorPane prefHeight="325.0" prefWidth="743.0">
+               <children>
+                  <Label fx:id="paymentLabel" layoutX="14.0" layoutY="14.0" styleClass="label-hover" stylesheets="@../../../css/DesignComponents.css" text="Payment Method" textFill="#22577a">
+                     <font>
+                        <Font name="Berlin Sans FB" size="28.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="60.0" layoutY="59.0" prefHeight="240.0" prefWidth="411.0" styleClass="Popup-Anchor3" stylesheets="@../../../css/DesignComponents.css">
+                     <children>
+                        <AnchorPane fx:id="smartAnchorPane" prefHeight="75.0" prefWidth="405.0" styleClass="topup-ap-hover-button" stylesheets="@../../../css/DesignComponents.css">
+                           <children>
+                              <Label layoutX="78.0" prefHeight="75.0" prefWidth="225.0" stylesheets="@../../../css/DesignComponents.css" text="SMART TELCO." textFill="#22577a">
+                                 <graphic>
+                                    <ImageView fitHeight="38.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../css/iconCopy/unnamed.png" />
+                                       </image></ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                              </Label>
+                              <RadioButton fx:id="smartRadio" layoutX="54.0" layoutY="24.0" mnemonicParsing="false">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </RadioButton>
+                              <ImageView fx:id="arrowImage1" fitHeight="40.0" fitWidth="24.0" layoutX="367.0" layoutY="18.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../../css/iconCopy/arrows.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Separator prefWidth="200.0" styleClass="Separator-Color" stylesheets="@../../../css/DesignComponents.css" />
+                        <AnchorPane prefHeight="75.0" prefWidth="405.0" styleClass="topup-ap-hover-button" stylesheets="@../../../css/DesignComponents.css">
+                           <children>
+                              <Label layoutX="78.0" prefHeight="75.0" prefWidth="325.0" stylesheets="@../../../css/DesignComponents.css" text="GCASH" textFill="#22577a">
+                                 <graphic>
+                                    <ImageView fitHeight="42.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../css/iconCopy/Transparent-1280-x-720.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                              </Label>
+                              <RadioButton fx:id="gcashRadio" layoutX="54.0" layoutY="24.0" mnemonicParsing="false">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </RadioButton>
+                              <ImageView fx:id="arrowImage2" fitHeight="40.0" fitWidth="24.0" layoutX="367.0" layoutY="18.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../../css/iconCopy/arrows.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Separator prefWidth="200.0" styleClass="Separator-Color" stylesheets="@../../../css/DesignComponents.css" />
+                        <AnchorPane prefHeight="75.0" prefWidth="405.0" styleClass="topup-ap-hover-button" stylesheets="@../../../css/DesignComponents.css">
+                           <children>
+                              <Label layoutX="78.0" prefHeight="75.0" prefWidth="325.0" stylesheets="@../../../css/DesignComponents.css" text="    BDO TRANSFER" textFill="#22577a">
+                                 <graphic>
+                                    <ImageView fitHeight="38.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../css/iconCopy/BDO%20Online%20Rounded%20004ea8.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets bottom="2.0" left="18.0" right="2.0" top="2.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                              </Label>
+                              <RadioButton fx:id="bdoRadio" layoutX="54.0" layoutY="24.0" mnemonicParsing="false">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </RadioButton>
+                              <ImageView fx:id="arrowImage3" fitHeight="40.0" fitWidth="24.0" layoutX="367.0" layoutY="18.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../../css/iconCopy/arrows.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <Separator prefWidth="200.0" styleClass="Separator-Color" stylesheets="@../../../css/DesignComponents.css" />
+            <Label alignment="CENTER" prefHeight="47.0" prefWidth="743.0" text="&quot;By clicking the 'BUY' button, you confirm that you are authorized to make this purchase and agree to the payment being non-refundable.&quot;" textAlignment="CENTER" textFill="WHITE" />
+            <Separator prefWidth="743.0" styleClass="Separator-Color" stylesheets="@../../../css/DesignComponents.css" />
+            <AnchorPane prefHeight="63.0" prefWidth="743.0">
+               <children>
+                  <Button layoutX="3.0" layoutY="4.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="737.0" styleClass="Buy-Button" stylesheets="@../../../css/DesignComponents.css" text="BUY">
+                     <font>
+                        <Font name="Berlin Sans FB" size="26.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Button fx:id="backButton" layoutX="25.0" layoutY="22.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="47.0" prefWidth="66.0" stylesheets="@../../../css/FButton.css">
+         <styleClass>
+            <String fx:value="Topup-button" />
+            <String fx:value="uni-hover-button" />
+            <String fx:value="white-press-button" />
+         </styleClass>
+         <graphic>
+            <ImageView fx:id="backImage" fitHeight="23.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../css/iconCopy/left.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

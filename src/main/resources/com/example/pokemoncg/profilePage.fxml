@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -13,27 +16,56 @@
 
 <AnchorPane fx:id="frameAnchorPane" prefHeight="735.0" prefWidth="1105.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pokemoncg.profileController">
    <children>
-      <ImageView fx:id="newbgImageView" fitHeight="736.0" fitWidth="1106.0" pickOnBounds="true">
+      <ImageView fx:id="newbgImageView" fitHeight="735.0" fitWidth="1105.0" pickOnBounds="true">
          <image>
             <Image url="@../../../css/image/1783733R.jpg" />
          </image>
       </ImageView>
-      <BorderPane fx:id="panelBorderPane" prefHeight="730.0" prefWidth="1100.0">
+      <BorderPane fx:id="panelBorderPane" prefHeight="735.0" prefWidth="1105.0">
          <center>
-            <AnchorPane fx:id="centerAnchorPane" prefWidth="1098.0" styleClass="Prof-AnchorP" stylesheets="@../../../css/DesignComponents.css" BorderPane.alignment="CENTER">
+            <AnchorPane fx:id="centerAnchorPane" prefHeight="720.0" prefWidth="1090.0" styleClass="Prof-AnchorP" stylesheets="@../../../css/DesignComponents.css" BorderPane.alignment="CENTER">
                <children>
-                  <HBox layoutX="6.0" layoutY="7.0" prefHeight="700.0" prefWidth="1074.0" stylesheets="@../../../css/DesignComponents.css">
+                  <HBox fx:id="HBox1" layoutX="6.0" layoutY="7.0" prefHeight="700.0" prefWidth="1074.0" stylesheets="@../../../css/DesignComponents.css">
                      <children>
-                        <VBox prefHeight="700.0" prefWidth="540.0">
+                        <VBox fx:id="VBox1" prefHeight="700.0" prefWidth="540.0" spacing="7.0">
                            <children>
                               <AnchorPane prefHeight="315.0" prefWidth="508.0">
                                  <children>
-                                    <VBox layoutY="-1.0" prefHeight="306.0" prefWidth="514.0" spacing="12.0">
+                                    <VBox layoutY="-1.0" prefHeight="319.0" prefWidth="514.0" spacing="11.0">
                                        <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Button fx:id="backButton" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="47.0" prefWidth="66.0" stylesheets="@../../../css/FButton.css" textAlignment="CENTER" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                   <graphic>
+                                                      <ImageView fx:id="backImageView" fitHeight="23.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../../../css/iconCopy/left.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                   <styleClass>
+                                                      <String fx:value="Topup-button" />
+                                                      <String fx:value="uni-hover-button" />
+                                                      <String fx:value="white-press-button" />
+                                                   </styleClass>
+                                                </Button>
+                                             </children>
+                                          </AnchorPane>
                                           <AnchorPane prefHeight="173.0" prefWidth="514.0">
                                              <children>
-                                                <Button mnemonicParsing="false" prefHeight="170.0" prefWidth="170.0" styleClass="Prof-Border" stylesheets="@../../../css/DesignComponents.css" />
-                                                <Label layoutX="180.0" layoutY="47.0" prefHeight="21.0" prefWidth="191.0" text="ID: 0000001    (SOUTH KOREA)" textFill="#22577a">
+                                                <Button layoutX="14.0" mnemonicParsing="false" prefHeight="170.0" prefWidth="170.0">
+                                                   <stylesheets>
+                                                      <URL value="@../../../css/DesignComponents.css" />
+                                                      <URL value="@../../../css/Catcher.css" />
+                                                   </stylesheets>
+                                                   <styleClass>
+                                                      <String fx:value="Prof-Border" />
+                                                      <String fx:value="prof-uni-hover-button" />
+                                                   </styleClass></Button>
+                                                <Label fx:id="idLabel" layoutX="184.0" layoutY="14.0" prefHeight="21.0" prefWidth="191.0" styleClass="label-hover" stylesheets="@../../../css/DesignComponents.css" text="ID: 0000001    (SOUTH KOREA)" textFill="#22577a">
                                                    <font>
                                                       <Font name="Berlin Sans FB" size="14.0" />
                                                    </font>
@@ -42,29 +74,47 @@
                                           </AnchorPane>
                                           <AnchorPane prefHeight="37.0" prefWidth="533.0">
                                              <children>
-                                                <Label layoutX="20.0" layoutY="2.0" prefHeight="37.0" prefWidth="156.0" text="Ingame Name:" textFill="#22577a">
+                                                <Label fx:id="ignLabel" layoutX="20.0" layoutY="2.0" prefHeight="37.0" prefWidth="156.0" styleClass="label-hover" stylesheets="@../../../css/DesignComponents.css" text="Ingame Name:" textFill="#22577a">
                                                    <font>
                                                       <Font name="Berlin Sans FB" size="24.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="186.0" prefHeight="37.0" prefWidth="229.0" styleClass="Uni-Border" stylesheets="@../../../css/DesignComponents.css">
+                                                <TextField fx:id="ignTextF" layoutX="186.0" onMouseClicked="#handlePopUp" prefHeight="37.0" prefWidth="229.0">
                                                    <font>
                                                       <Font name="Berlin Sans FB" size="20.0" />
                                                    </font>
+                                                   <styleClass>
+                                                      <String fx:value="Uni-Border" />
+                                                      <String fx:value="prof-uni-hover-button" />
+                                                      <String fx:value="prof-white-press-button" />
+                                                   </styleClass>
+                                                   <stylesheets>
+                                                      <URL value="@../../../css/DesignComponents.css" />
+                                                      <URL value="@../../../css/Catcher.css" />
+                                                   </stylesheets>
                                                 </TextField>
                                              </children>
                                           </AnchorPane>
                                           <AnchorPane prefHeight="37.0" prefWidth="508.0">
                                              <children>
-                                                <Label layoutX="20.0" layoutY="2.0" prefHeight="37.0" prefWidth="156.0" text="Bind Gmail:" textFill="#22577a">
+                                                <Label fx:id="bindLabel" layoutX="20.0" layoutY="2.0" prefHeight="37.0" prefWidth="156.0" styleClass="label-hover" stylesheets="@../../../css/DesignComponents.css" text="Bind Gmail:" textFill="#22577a">
                                                    <font>
                                                       <Font name="Berlin Sans FB" size="24.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="186.0" prefHeight="37.0" prefWidth="229.0" styleClass="Uni-Border" stylesheets="@../../../css/DesignComponents.css">
+                                                <TextField fx:id="gmailTextF" layoutX="186.0" onMouseClicked="#handlePopUp" prefHeight="37.0" prefWidth="229.0">
                                                    <font>
                                                       <Font name="Berlin Sans FB" size="20.0" />
                                                    </font>
+                                                   <styleClass>
+                                                      <String fx:value="Uni-Border" />
+                                                      <String fx:value="prof-uni-hover-button" />
+                                                      <String fx:value="prof-white-press-button" />
+                                                   </styleClass>
+                                                   <stylesheets>
+                                                      <URL value="@../../../css/DesignComponents.css" />
+                                                      <URL value="@../../../css/Catcher.css" />
+                                                   </stylesheets>
                                                 </TextField>
                                              </children>
                                           </AnchorPane>
@@ -74,31 +124,54 @@
                               </AnchorPane>
                               <AnchorPane prefHeight="326.0" prefWidth="514.0">
                                  <children>
-                                    <Label layoutX="154.0" prefHeight="37.0" prefWidth="205.0" text="STATISTICS" textFill="#22577a">
+                                    <Label fx:id="statsLabel" layoutX="199.0" prefHeight="37.0" prefWidth="137.0" styleClass="label-hover" stylesheets="@../../../css/DesignComponents.css" text="STATISTICS" textFill="#22577a">
                                        <font>
                                           <Font name="Berlin Sans FB" size="28.0" />
                                        </font>
                                     </Label>
                                  </children>
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
                               </AnchorPane>
                            </children>
                         </VBox>
-                        <VBox alignment="TOP_RIGHT" prefHeight="700.0" prefWidth="540.0">
+                        <VBox fx:id="VBox2" alignment="TOP_RIGHT" prefHeight="700.0" prefWidth="540.0">
                            <children>
-                              <HBox prefHeight="326.0" prefWidth="533.0" spacing="1.0">
+                              <HBox prefHeight="326.0" prefWidth="537.0" spacing="1.0">
                                  <children>
-                                    <AnchorPane prefHeight="326.0" prefWidth="265.0" />
-                                    <AnchorPane prefHeight="326.0" prefWidth="265.0" />
+                                    <AnchorPane prefHeight="326.0" prefWidth="265.0">
+                                       <children>
+                                          <Label fx:id="currentLabel" layoutX="30.0" prefHeight="37.0" prefWidth="206.0" styleClass="label-hover" stylesheets="@../../../css/DesignComponents.css" text="CURRENT TROPHY" textFill="#22577a">
+                                             <font>
+                                                <Font name="Berlin Sans FB" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children></AnchorPane>
+                                    <AnchorPane prefHeight="326.0" prefWidth="265.0">
+                                       <children>
+                                          <Label fx:id="highestLabel" layoutX="36.0" prefHeight="37.0" prefWidth="194.0" styleClass="label-hover" stylesheets="@../../../css/DesignComponents.css" text="HIGHEST TROPHY" textFill="#22577a">
+                                             <font>
+                                                <Font name="Berlin Sans FB" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children></AnchorPane>
                                  </children>
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
                               </HBox>
                               <AnchorPane prefHeight="326.0" prefWidth="533.0">
                                  <children>
-                                    <Label layoutX="136.0" prefHeight="37.0" prefWidth="229.0" text="MAIN TEAM COMP" textFill="#22577a">
+                                    <Label fx:id="mainLabel" layoutX="154.0" prefHeight="37.0" prefWidth="229.0" styleClass="label-hover" stylesheets="@../../../css/DesignComponents.css" text="MAIN TEAM COMP" textFill="#22577a">
                                        <font>
                                           <Font name="Berlin Sans FB" size="28.0" />
                                        </font>
                                     </Label>
                                  </children>
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
                               </AnchorPane>
                            </children>
                         </VBox>
@@ -107,9 +180,6 @@
                </children>
             </AnchorPane>
          </center>
-         <top>
-            <AnchorPane fx:id="topAnchorPane" prefHeight="5.0" prefWidth="5.0" BorderPane.alignment="CENTER" />
-         </top>
          <bottom>
             <AnchorPane fx:id="bottomAnchorPane" prefHeight="5.0" prefWidth="5.0" BorderPane.alignment="CENTER" />
          </bottom>
@@ -119,6 +189,9 @@
          <left>
             <AnchorPane fx:id="leftAnchorPane" prefHeight="5.0" prefWidth="5.0" BorderPane.alignment="CENTER" />
          </left>
+         <top>
+            <AnchorPane fx:id="topAnchorPane" prefHeight="5.0" prefWidth="5.0" BorderPane.alignment="CENTER" />
+         </top>
       </BorderPane>
    </children>
 </AnchorPane>

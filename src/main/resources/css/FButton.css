@@ -25,6 +25,7 @@
 .white-press-button:pressed {
     -fx-background-image: null;
     -fx-background-color: white;
+    -fx-text-fill: white;
     -fx-border-color: #22577aff;
     -fx-border-width: 5px;
 }
@@ -35,6 +36,7 @@
     -fx-background-color: linear-gradient(to bottom, #57cc99ff, #38a3a5ff, #22577aff);
     -fx-border-color: #c7f9ccff;
     -fx-border-width: 3px;
+    -fx-text-fill: white;
     -fx-padding: 10px;
 }
 
@@ -65,4 +67,12 @@
     -fx-border-color: #c7f9ccff;
     -fx-border-width: 3px;
     -fx-padding: 10px;
+}
+
+.Recharge-button {
+    -fx-shape: "M402 4C303.081 -14.3595 277 46.5 228 42C228 42 200.327 41.2022 187.5 31C177.582 23.1114 167 13 169.5 4C172 -5 22.6423 29.88 10.3212 49.44C-2 69 -1.89583 136.187 10.3212 140.683C22.5382 145.18 254.653 161.459 439.416 140.683C470.543 108.451 455.581 72.0008 462 25.7585C403.219 35.2927 414.36 32.7978 402 4Z";
+    -fx-background-color: #22577aCC;
+    -fx-border-color: #c7f9ccff;
+    -fx-text-fill: white;
+    -fx-border-width: 3px;
 }
