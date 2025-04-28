@@ -52,6 +52,11 @@
                                                       <String fx:value="white-press-button" />
                                                    </styleClass>
                                                 </Button>
+                                                <Label fx:id="profileLabel" layoutX="90.0" layoutY="6.0" prefHeight="37.0" prefWidth="215.0" styleClass="label-hover" stylesheets="@../../../css/DesignComponents.css" text="PLAYER PROFILE" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="28.0" />
+                                                   </font>
+                                                </Label>
                                              </children>
                                           </AnchorPane>
                                           <AnchorPane prefHeight="173.0" prefWidth="514.0">
@@ -65,7 +70,7 @@
                                                       <String fx:value="Prof-Border" />
                                                       <String fx:value="prof-uni-hover-button" />
                                                    </styleClass></Button>
-                                                <Label fx:id="idLabel" layoutX="184.0" layoutY="14.0" prefHeight="21.0" prefWidth="191.0" styleClass="label-hover" stylesheets="@../../../css/DesignComponents.css" text="ID: 0000001    (SOUTH KOREA)" textFill="#22577a">
+                                                <Label fx:id="idLabel" layoutX="191.0" layoutY="134.0" prefHeight="21.0" prefWidth="191.0" styleClass="label-hover" stylesheets="@../../../css/DesignComponents.css" text="ID: 0000001    (SOUTH KOREA)" textFill="#22577a">
                                                    <font>
                                                       <Font name="Berlin Sans FB" size="14.0" />
                                                    </font>

@@ -113,5 +113,12 @@ public class homeController extends FXMLLoaderUtility {
         loadFXMLAndSetScene(stage,"/com/example/pokemoncg/topupPage.fxml", "GAGUElets!", 1105, 735);
     }
 
+    @FXML
+    private void pokemonButtonOnAction (ActionEvent event) {
+
+        Stage stage = (Stage) pokemonButton.getScene().getWindow();
+        loadFXMLAndSetScene(stage,"/com/example/pokemoncg/pokemonPage.fxml", "BULOKlets!", 1105, 735);
+    }
+
 
 }

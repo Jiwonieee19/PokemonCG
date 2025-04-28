@@ -145,7 +145,7 @@
                <children>
                   <HBox alignment="CENTER" layoutX="219.0" prefHeight="127.0" prefWidth="447.0" spacing="7.0">
                      <children>
-                        <Button fx:id="pokemonButton" contentDisplay="TOP" mnemonicParsing="false" prefHeight="100.0" prefWidth="130.0" stylesheets="@../../../css/FButton.css" textAlignment="CENTER">
+                        <Button fx:id="pokemonButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#pokemonButtonOnAction" prefHeight="100.0" prefWidth="130.0" stylesheets="@../../../css/FButton.css" textAlignment="CENTER">
                            <graphic>
                               <ImageView fx:id="pokemonImage" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>

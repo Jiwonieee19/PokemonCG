@@ -42,7 +42,7 @@ public class profileController extends FXMLLoaderUtility {
     private Button backButton;
 
     @FXML
-    private Label ignLabel, bindLabel, currentLabel, highestLabel, statsLabel, mainLabel, idLabel;
+    private Label profileLabel, ignLabel, bindLabel, currentLabel, highestLabel, statsLabel, mainLabel, idLabel;
 
 
     public void initialize() {
@@ -72,6 +72,7 @@ public class profileController extends FXMLLoaderUtility {
         // IMAGEVIEW COLOR CONTROL
         ImageViewWhite.apply(backImageView);
 
+        GlowEffectUsage.applyHoverLabel(profileLabel);
         GlowEffectUsage.applyHoverLabel(ignLabel);
         GlowEffectUsage.applyHoverLabel(bindLabel);
         GlowEffectUsage.applyHoverLabel(currentLabel);
