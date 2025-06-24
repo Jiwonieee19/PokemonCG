@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="frameAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="1105.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pokemoncg.pokemonController">
+   <children>
+      <ImageView fx:id="newbgImageView" fitHeight="735.0" fitWidth="1105.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../css/image/1783733R.jpg" />
+         </image>
+      </ImageView>
+      <BorderPane fx:id="panelBorderPane" prefHeight="735.0" prefWidth="1105.0">
+         <top>
+            <AnchorPane fx:id="topAnchorPane" prefHeight="5.0" prefWidth="5.0" BorderPane.alignment="CENTER" />
+         </top>
+         <left>
+            <AnchorPane fx:id="leftAnchorPane" prefHeight="5.0" prefWidth="5.0" BorderPane.alignment="CENTER" />
+         </left>
+         <bottom>
+            <AnchorPane fx:id="bottomAnchorPane" prefHeight="5.0" prefWidth="5.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <right>
+            <AnchorPane fx:id="rightAnchorPane" prefHeight="5.0" prefWidth="5.0" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <AnchorPane fx:id="centerAnchorPane" prefHeight="725.0" prefWidth="1095.0" styleClass="Prof-AnchorP" stylesheets="@../../../css/DesignComponents.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox fx:id="VBox1" alignment="TOP_CENTER" prefHeight="706.0" prefWidth="1087.0">
+                     <children>
+                        <AnchorPane fx:id="VBoxAP1" prefHeight="111.0" prefWidth="1087.0">
+                           <children>
+                              <Label fx:id="pokemonsLabel" layoutX="20.0" layoutY="64.0" prefHeight="51.0" prefWidth="161.0" styleClass="label-hover" stylesheets="@../../../css/DesignComponents.css" text="POKEMONS" textFill="#22577a">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="backButton" layoutX="20.0" layoutY="6.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="47.0" prefWidth="66.0" stylesheets="@../../../css/FButton.css">
+                                 <graphic>
+                                    <ImageView fx:id="backImageView" fitHeight="23.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../css/iconCopy/left.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="Topup-button" />
+                                    <String fx:value="uni-hover-button" />
+                                    <String fx:value="white-press-button" />
+                                 </styleClass>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="VBoxAP2" prefHeight="578.0" prefWidth="1087.0">
+                           <children>
+                              <ScrollPane fx:id="scrollPane" fitToHeight="true" layoutX="9.0" layoutY="58.0" prefHeight="507.0" prefWidth="437.0" stylesheets="@../../../css/DesignComponents.css">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="557.0" prefWidth="428.0" stylesheets="@../../../css/DesignComponents.css">
+                                       <styleClass>
+                                          <String fx:value="Uni-Border" />
+                                          <String fx:value="Trans-Anchor-scroll-pane" />
+                                       </styleClass>
+                                       <children>
+                                          <VBox prefHeight="544.0" prefWidth="428.0" styleClass="Uni-Border" stylesheets="@../../../css/DesignComponents.css">
+                                             <children>
+                                                <HBox prefHeight="187.0" prefWidth="421.0">
+                                                   <padding>
+                                                      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                                   </padding></HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                                 <styleClass>
+                                    <String fx:value="Uni-Border" />
+                                    <String fx:value="Trans-scroll-pane" />
+                                 </styleClass>
+                              </ScrollPane>
+                              <HBox layoutX="14.0" layoutY="14.0" prefHeight="36.0" prefWidth="225.0">
+                                 <children>
+                                    <TextField prefHeight="36.0" prefWidth="184.0" />
+                                    <ImageView fitHeight="36.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
